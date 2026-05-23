@@ -1,0 +1,182 @@
+{
+  "accuracy": 0.7558,
+  "auc": 0.848,
+  "attrition_rate_train": 0.4755,
+  "feature_columns": [
+    "Age",
+    "Gender",
+    "Years at Company",
+    "Job Role",
+    "Monthly Income",
+    "Work-Life Balance",
+    "Job Satisfaction",
+    "Performance Rating",
+    "Number of Promotions",
+    "Overtime",
+    "Distance from Home",
+    "Education Level",
+    "Marital Status",
+    "Number of Dependents",
+    "Job Level",
+    "Company Size",
+    "Company Tenure",
+    "Remote Work",
+    "Leadership Opportunities",
+    "Innovation Opportunities",
+    "Company Reputation",
+    "Employee Recognition"
+  ],
+  "label_encoders": {
+    "Gender": {
+      "Female": 0,
+      "Male": 1
+    },
+    "Job Role": {
+      "Education": 0,
+      "Finance": 1,
+      "Healthcare": 2,
+      "Media": 3,
+      "Technology": 4
+    },
+    "Work-Life Balance": {
+      "Excellent": 0,
+      "Fair": 1,
+      "Good": 2,
+      "Poor": 3
+    },
+    "Job Satisfaction": {
+      "High": 0,
+      "Low": 1,
+      "Medium": 2,
+      "Very High": 3
+    },
+    "Performance Rating": {
+      "Average": 0,
+      "Below Average": 1,
+      "High": 2,
+      "Low": 3
+    },
+    "Overtime": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Education Level": {
+      "Associate Degree": 0,
+      "Bachelor\u2019s Degree": 1,
+      "High School": 2,
+      "Master\u2019s Degree": 3,
+      "PhD": 4
+    },
+    "Marital Status": {
+      "Divorced": 0,
+      "Married": 1,
+      "Single": 2
+    },
+    "Job Level": {
+      "Entry": 0,
+      "Mid": 1,
+      "Senior": 2
+    },
+    "Company Size": {
+      "Large": 0,
+      "Medium": 1,
+      "Small": 2
+    },
+    "Remote Work": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Leadership Opportunities": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Innovation Opportunities": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Company Reputation": {
+      "Excellent": 0,
+      "Fair": 1,
+      "Good": 2,
+      "Poor": 3
+    },
+    "Employee Recognition": {
+      "High": 0,
+      "Low": 1,
+      "Medium": 2,
+      "Very High": 3
+    }
+  },
+  "feature_importance": {
+    "Distance from Home": 3810,
+    "Monthly Income": 3680,
+    "Company Tenure": 3451,
+    "Years at Company": 2922,
+    "Age": 2698,
+    "Work-Life Balance": 1755,
+    "Number of Dependents": 1368,
+    "Education Level": 1241,
+    "Number of Promotions": 1161,
+    "Company Reputation": 1151,
+    "Job Satisfaction": 1077,
+    "Job Level": 947,
+    "Performance Rating": 945,
+    "Marital Status": 906,
+    "Employee Recognition": 711,
+    "Job Role": 648,
+    "Company Size": 621,
+    "Gender": 572,
+    "Remote Work": 559,
+    "Overtime": 406,
+    "Innovation Opportunities": 240,
+    "Leadership Opportunities": 131
+  },
+  "group_attrition": {
+    "Job Role": {
+      "Education": 0.487,
+      "Finance": 0.468,
+      "Healthcare": 0.473,
+      "Media": 0.474,
+      "Technology": 0.473
+    },
+    "Job Level": {
+      "Entry": 0.632,
+      "Mid": 0.456,
+      "Senior": 0.203
+    },
+    "Gender": {
+      "Female": 0.532,
+      "Male": 0.429
+    },
+    "Marital Status": {
+      "Divorced": 0.407,
+      "Married": 0.361,
+      "Single": 0.668
+    },
+    "Company Size": {
+      "Large": 0.465,
+      "Medium": 0.466,
+      "Small": 0.499
+    },
+    "Overtime": {
+      "No": 0.456,
+      "Yes": 0.515
+    },
+    "Remote Work": {
+      "No": 0.529,
+      "Yes": 0.249
+    }
+  },
+  "confusion_matrix": [
+    [
+      6029,
+      1839
+    ],
+    [
+      1799,
+      5233
+    ]
+  ],
+  "train_size": 59598,
+  "test_size": 14900
+}
